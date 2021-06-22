@@ -1,0 +1,131 @@
+:root {
+  --black-600: #666;
+  --blue-900: #073b4c;
+  --blue-700: #0a556e;
+  --blue-400: #118ab2;
+  --red-500: #ef476f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  color: var(--blue-900);
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+}
+
+.container > h1 {
+  margin-bottom: 0.8rem;
+}
+
+form {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  min-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fbfbfb;
+  border: 1px solid var(--blue-700);
+  border-radius: 0.5rem;
+}
+
+div.input {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+  -moz-box-shadow: 0 0 0 30px white inset;
+  box-shadow: 0 0 0 30px white inset;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 100%;
+  padding: 0.4rem 0;
+
+  border: none;
+  border-bottom: 1px solid var(--blue-700);
+  color: var(--blue-400);
+
+  background-color: transparent;
+
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+
+input ~ label {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: var(--black-600);
+  transition: 0.4s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  transform: translateY(-1.4rem);
+  font-size: 0.9rem;
+  letter-spacing: 0.08rem;
+}
+
+.input span.error {
+  display: flex;
+  padding: 0;
+  color: var(--red-500);
+  font-size: 0.8rem;
+  margin: 0.4rem 0;
+}
+
+form .button {
+  background-color: var(--blue-400);
+  color: white;
+  letter-spacing: 0.1rem;
+
+  border: none;
+  border-radius: 0.2rem;
+  outline: none;
+
+  font-weight: bold;
+  font-size: 1rem;
+
+  padding: 0.8rem 0;
+
+  transition: 0.4s;
+}
+
+form .button:hover {
+  background-color: var(--blue-700);
+  cursor: pointer;
+}

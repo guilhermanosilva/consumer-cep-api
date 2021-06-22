@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consumer CEP API</title>
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Cadastro de endereço</h1>
+      <form action="">
+        <div class="input">
+          <input type="text" id="cep" maxlength="9" required />
+          <label class="label" for="cep">CEP</label>
+          <span class="error"></span>
+        </div>
+        <div class="input">
+          <input type="text" id="logradouro" required />
+          <label class="label" for="logradouro">Logradouro</label>
+          <span class="error"></span>
+        </div>
+        <div class="input">
+          <input type="text" id="bairro" required />
+          <label class="label" for="bairro">Bairro</label>
+          <span class="error"></span>
+        </div>
+        <div class="input">
+          <input type="text" id="localidade" required />
+          <label class="label" for="localidade">Localidade</label>
+          <span class="error"></span>
+        </div>
+        <div class="input">
+          <input type="text" id="uf" required />
+          <label class="label" for="uf">UF</label>
+          <span class="error"></span>
+        </div>
+
+        <button class="button" type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
