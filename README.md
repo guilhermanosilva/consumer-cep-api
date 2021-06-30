@@ -10,7 +10,7 @@ Consulta o CEP informado com validação em tempo de digitação. Ao verificar q
 * Auto preenchimento dos valores retornados da API;
 * Verificação de campos vazios com mensagem personalizada;
 * Estilização de campos inválidos e válidos;
-* Desativação do botão enviar e atívar apenas quando todos os valores obrigatórios forem preenchidos;
+* Desativação do botão enviar e ativar apenas quando todos os valores obrigatórios forem preenchidos;
 * Preparação de um objeto json com todos os dados de endereço;
 
 ### Tecnologias:
